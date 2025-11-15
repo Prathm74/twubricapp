@@ -1,0 +1,12 @@
+:root {
+  --primary: #f38518;
+  --secondary: #8fbcbb;
+
+  --bg: #ffffff;
+  --card-bg: #f9f9f9;
+
+  --text: #333;
+
+  --radius: 16px;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}

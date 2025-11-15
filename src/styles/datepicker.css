@@ -1,0 +1,37 @@
+/* Datepicker overrides */
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.react-datepicker__input-container input {
+  width: 160px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+}
+
+.react-datepicker-popper {
+  z-index: 9999 !important;
+}
+
+.react-datepicker {
+  border-radius: 12px;
+  padding: 8px;
+}
+
+.react-datepicker__header {
+  background-color: var(--secondary);
+  color: white;
+  border-bottom: none;
+}
+
+.react-datepicker__day--selected {
+  background: var(--primary) !important;
+  color: white !important;
+}
+
+.react-datepicker__day--keyboard-selected {
+  background: var(--primary) !important;
+}

@@ -1,0 +1,112 @@
+/* ===========================
+   Premium Glassmorphism Card
+   =========================== */
+
+.twubric-card {
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 20px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.12);
+  transition: all 0.25s ease-in-out;
+  animation: fadeInCard 0.4s ease var(--delay) forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInCard {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.twubric-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.16);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Header */
+.twubric-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.twubric-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+.twubric-user-info h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #d45858;
+}
+
+.twubric-user-info p {
+  color: #d45858;
+  font-size: 14px;
+}
+
+/* Score Badge */
+.twubric-score-badge {
+  margin-top: 12px;
+  padding: 6px 12px;
+  border-radius: 12px;
+  background: var(--gradient-primary);
+  display: inline-block;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: var(--shadow-soft);
+}
+
+/* Stats Section */
+.twubric-details {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #d45858;
+  font-size: 15px;
+}
+
+.stat-icon {
+  font-size: 18px;
+  opacity: 0.85;
+}
+
+/* Remove Button */
+.remove-btn {
+  margin-top: 16px;
+  width: 100%;
+  padding: 10px;
+  background: rgba(255, 66, 66, 0.8);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.25s ease;
+}
+
+.remove-btn:hover {
+  background: rgba(255, 30, 30, 1);
+  transform: translateY(-2px);
+}
