@@ -15,7 +15,7 @@ const TwubricCard = ({ user, delay, onRemove }) => {
   return (
     <div
       className="twubric-card"
-      style={{ "--delay": delay, opacity: removing ? 0 : 1 }}
+      style={{ "--delay": delay }}
     >
       <div className="twubric-header">
         <img src={user.image} alt={user.fullname} className="twubric-avatar" />

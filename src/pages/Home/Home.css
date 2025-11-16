@@ -47,7 +47,7 @@
   font-size: 15px;
   font-weight: 500;
   color: var(--text-light);
-  transition: 0.25s ease;
+  transition: 2s ease;
 }
 
 .sort-buttons button:hover {
@@ -92,7 +92,7 @@
   font-size: 15px;
   font-weight: 500;
   color: #222;
-  transition: 0.25s ease;
+  transition: 2s ease;
   box-shadow: var(--shadow-soft);
 }
 

@@ -1,9 +1,10 @@
-## Twubric Followers — React Application
+## twubricapp — React Application
 
 A modern, fully responsive React application to display and manage Twubric follower data with sorting, date filters, animations, skeleton loading, and a clean UI using glassmorphism.
 
 ## Live Demo
 
+https://twubricapp-delta.vercel.app/
 
 ## Features
 
@@ -127,7 +128,7 @@ Hosting
 
 1. Clone the repo
 
-git clone https://github.com/YOUR_NAME/twubric-followers.git
+git clone https://github.com/Prathm74/twubricapp
 
 2. Install dependencies
 

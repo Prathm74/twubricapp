@@ -187,23 +187,25 @@ const Home = () => {
       </div>
 
       {/* Cards */}
-      <div className="twubric-grid">
-        {loading ? (
-          // show 6 skeleton cards
-          [...Array(6)].map((_, idx) => <SkeletonCard key={idx} />)
-        ) : filtered.length === 0 ? (
-          <EmptyState onReset={resetFilters} />
-        ) : (
-          filtered.map((user, i) => (
+      {loading ? (
+        <div className="twubric-grid">
+          {[...Array(6)].map((_, idx) => <SkeletonCard key={idx} />)}
+        </div>
+      ) : filtered.length === 0 ? (
+        <EmptyState onReset={resetFilters} />
+      ) : (
+        <div className="twubric-grid">
+          {filtered.map((user, i) => (
             <TwubricCard
               key={user.uid}
               user={user}
               delay={`${i * 0.1}s`}
               onRemove={removeUser}
             />
-          ))
-        )}
-      </div>
+          ))}
+        </div>
+      )}
+
 
     </div>
   );
