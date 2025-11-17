@@ -12,6 +12,16 @@ const TwubricCard = ({ user, delay, onRemove }) => {
     setTimeout(() => onRemove(user.uid), 300);
   };
 
+  const formatDate = (unix) => {
+  const date = new Date(unix * 1000);
+  return date.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "short",
+    day: "numeric"
+  });
+};
+
+
   return (
     <div
       className="twubric-card"
@@ -48,6 +58,9 @@ const TwubricCard = ({ user, delay, onRemove }) => {
           <FaSmileBeam className="stat-icon" />
           Chirpiness: {user.twubric.chirpiness}
         </div>
+
+        <p><strong>Joined:</strong> {formatDate(user.join_date)}</p>
+
 
       </div>
 
